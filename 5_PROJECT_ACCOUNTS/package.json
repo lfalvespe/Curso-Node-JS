@@ -1,0 +1,21 @@
+{
+  "name": "accounts",
+  "version": "1.0.0",
+  "description": "simple terminal based account manager made with  node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.mjs"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "modules",
+    "npm"
+  ],
+  "author": "Fernando Alves (https://github.com/lfalvespe)",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  }
+}
