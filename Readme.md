@@ -30,7 +30,12 @@
     <li>Sair</li>
 </ol>
 
-<h3>Curso em andamento ...</h3>
+
+
+
+<h3 style="textAlign:center;">Curso em andamento ...</h3>
+
+
 
 
 <h3>Escola: Hora de Codar</h3>
