@@ -7,7 +7,7 @@ inquirer.prompt([
     },
     {
         name: 'p2',
-        message: 'Qual a segunad nota?'
+        message: 'Qual a segunda nota?'
     }
 ])
 .then((answers) => {
@@ -22,3 +22,4 @@ inquirer.prompt([
     console.log(`A média é ${media}`)
 })
 .catch(err => console.log(err))
+

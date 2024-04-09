@@ -3,7 +3,6 @@ import http from "http";
 import fs from "fs";
 
 import url from "url";
-import { userInfo } from "os";
 
 const port = 3000;
 

@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
             `
         )
     } else {
-        res.end(`<h1>Seja bem vindo, ${name}</h1>`)
+        res.end(`<h1>Seja bem vindo(a), ${name}</h1>`)
     }
 
 })
