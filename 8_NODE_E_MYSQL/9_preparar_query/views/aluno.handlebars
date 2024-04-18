@@ -1,0 +1,20 @@
+<div class="aluno">
+    <h2>INFORMAÇÕES DO ALUNO</h2>
+
+    <div class="aluno_container">
+        <h4 class="name">{{aluno.name}}</h4>
+        <p>Idade: {{aluno.age}}</p>
+        <p>Série: {{aluno.grade}}</p>
+        <p>Nível: {{aluno.level}}</p>
+        <p>Email: {{aluno.email}}</p>
+        <div class="actions">
+            <a href="/alunos/edit/{{aluno.id}}"><div class="btn_editar">Editar</div></a>
+            <form action="/alunos/delete/{{aluno.id}}" method="POST">
+                <input type="submit" value="Excluir" class="btn_excluir">
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<a href="/alunos"><div class="btn_voltar">Voltar</div></a>
