@@ -1,0 +1,272 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: helvetica;
+    background-color: #e9e9e9;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0 0 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 40px;
+    margin-top: 1px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+nav a {
+    width: fit-content;
+    padding: 9px;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #535353;
+    text-shadow: 1px 1px 2px #00000067;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HOME */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home p {
+    width: 50%;
+    padding: 1em;
+    text-align: justify;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+    margin: 15px auto;
+    font-style: italic;
+}
+
+.home .img img{
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 4px #000);
+}
+
+
+/* PROFESSORES */
+.professores, .alunos {
+    margin: 20px auto;
+}
+
+.professores_container, .alunos_container {
+    margin: 40px 0;
+}
+
+/* ABOUT */
+.about {
+    margin: auto;
+}
+
+.about p {
+    margin: auto;
+    width: 80%;
+    text-align: justify;
+}
+
+/* PROFESSOR ALUNO*/
+.card_professor, .card_aluno {
+    margin: auto;
+    width: fit-content;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #00000070;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: cornflowerblue;
+    text-align: left;
+    color: #fff;
+    text-shadow: 1px 1px 2px #00000086;
+}
+
+.card_professor #name, .card_aluno #name, .card_professor .legend, .card_aluno .legend {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+}
+
+.modal_content {
+    margin: 170px auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* FORMPROFESSOR, FORMALUNO*/
+.formprofessor, .formaluno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+fieldset legend {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+fieldset label {
+    font-weight: bold;
+    text-align: left;
+    text-transform: capitalize;
+    margin: .3em
+}
+
+fieldset input {
+    padding: 5px;
+}
+
+fieldset .add_btn {
+    margin: 20px auto;
+    width: 20%;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+.author {
+    color: cornflowerblue;
+}
+
+/* ALL */
+.back_btn,
+.register_btn,
+.edit_btn,
+.delete_btn,
+.cancel_btn {
+    width: 150px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.back_btn:hover,
+.register_btn:hover,
+.edit_btn:hover,
+.delete_btn:hover,
+.cancel_btn:hover {
+    background-color: #7a7a7a;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+table {
+    margin-bottom: 40px;
+}
+
+th,
+td {
+    padding: 0 5px;
+}
+
+th {
+    text-transform: capitalize;
+    background-color: #000;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #969696;
+}
+
+tr:nth-child(odd) {
+    background-color: #d8d8d8;
+}
+
+.name,
+.disciplina,
+.level {
+    text-transform: capitalize;
+}
+
+.name {
+    text-align: left;
+    font-weight: 700;
+}
+
+.name a {
+    text-decoration: none;
+    color: #000;
+}
+
+.name a:hover {
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.table_legend {
+    background-color: cornflowerblue;
+    color: #fff;
+    text-shadow: 1px 1px 2px #00000094;
+}
+
+.mail {
+    text-align: right;
+}

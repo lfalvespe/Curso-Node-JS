@@ -1,0 +1,34 @@
+
+
+<div class="professor">
+    <h2>Dados do professor</h2>
+
+    <div class="card_professor">
+        <p id="name">{{professor.name}}</p>
+        <p><span class="legend">disciplina:</span> <span class="disciplina">{{professor.disciplina}}</span></p>
+        <p><span class="legend">Email:</span> {{professor.email}}</p>
+        <div class="actions">
+            <a href="/professores/edit/{{professor.id}}" class="edit_btn">Editar</a>
+           
+            <button class="delete_btn">Excluir</button>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal_content">
+            <h4>Confirma a exclusão do Registro?</h4>
+            <div class="actions">
+                <button class="cancel_btn">Cancelar</button>
+                <form action="/professores/delete/{{professor.id}}" method="POST">
+                    <input type="submit" value="Excluir" class="delete_btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <a href="/professores" class="back_btn">Voltar</a>
+
+</div>
+
+<script src="/javascript/professor.js" defer></script>
+

@@ -1,0 +1,34 @@
+
+<div class="aluno">
+    <h2>Dados do aluno</h2>
+
+    <div class="card_aluno">
+        <p id="name">{{aluno.name}}</p>
+        <p><span class="legend">Idade:</span> {{aluno.age}}</p>
+        <p><span class="legend">Nível:</span> <span class="level">{{aluno.level}}</span></p>
+        <p><span class="legend">Série:</span> {{aluno.grade}}</p>
+        <p><span class="legend">Email:</span> {{aluno.email}}</p>
+        <div class="actions">
+            <a href="/alunos/edit/{{aluno.id}}" class="edit_btn">Editar</a>
+
+            <button class="delete_btn">Excluir</button>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal_content">
+            <h4>Confirma a exclusão do Registro?</h4>
+            <div class="actions">
+                <button class="cancel_btn">Cancelar</button>
+                <form action="/alunos/delete/{{aluno.id}}" method="POST">
+                    <input type="submit" value="Excluir" class="delete_btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <a href="/alunos" class="back_btn">Voltar</a>
+
+</div>
+
+<script src="/javascript/aluno.js" defer></script>

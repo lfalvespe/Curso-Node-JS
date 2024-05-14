@@ -1,0 +1,47 @@
+<div class="alunos">
+    <h2>Lista de Alunos</h2>
+    
+    <div class="alunos_container">
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>nome</th>
+                    <th>idade</th>
+                    <th>level</th>
+                    <th>grade</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+                {{#each alunos}}
+                <tr>
+                    <td>{{this.id}}</td>
+                   <td class="name"><a href="/alunos/{{this.id}}">{{this.name}}</a></td>
+                    <td>{{this.age}}</td>
+                    <td class="level">{{this.level}}</td>
+                    <td>{{this.grade}}</td>
+                    <td class="mail"><a href="mailto: {{this.email}}">{{this.email}}</a></td>
+                </tr>
+                {{/each}}
+
+                    <tfoot>
+                <tr>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="table_legend">* Clique em um nome para detalhes, editar ou excluir.
+                </tr>
+            </tfoot>
+
+            </tbody>
+        </table>
+    </div>
+    
+    <a href="/" class="back_btn">Voltar</a>
+    <a href="/alunos/formaluno" class="back_btn">Cadastrar</a>
+</div>

@@ -1,0 +1,42 @@
+<div class="professores">
+    <h2>Lista de professores</h2>
+
+    <div class="professores_container">
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>nome</th>
+                    <th>disciplina</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each professores}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td class="name"><a href="/professores/{{this.id}}">{{this.name}}</a></td>
+                    <td class="disciplina">{{this.disciplina}}</td>
+                    <td class="mail"><a href="mailto: {{this.email}}">{{this.email}}</a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="table_legend">* Clique em um nome para detalhes, editar ou excluir.
+                </tr>
+            </tfoot>
+        </table>
+
+
+
+        <a href="/" class="back_btn">Voltar</a>
+        <a href="/professores/formprofessor" class="back_btn">Cadastrar</a>
+    </div>
+</div>

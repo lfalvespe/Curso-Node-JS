@@ -1,0 +1,23 @@
+<h2>Cadastrar novo aluno</h2>
+
+<div class="formaluno">
+    <form action="/alunos/register" method="POST" class="form">
+        <fieldset>
+            <legend>novo aluno</legend>
+            <label for="name">nome</label>
+            <input type="text" name="name" placeholder="Digite nome" required>
+            <label for="age">idade</label>
+            <input type="number" name="age" placeholder="Digite a idade" required>
+            <label for="level">level</label>
+            <input type="text" name="level" placeholder="Digite o nível" required>
+            <label for="grade">série</label>
+            <input type="number" name="grade" placeholder="Digite a série" required>
+            <label for="email">email</label>
+            <input type="email" name="email" placeholder="Digite o email">
+
+            <input type="submit" value="Cadastrar" class="register_btn">
+        </fieldset>
+    </form>
+    
+    <a href="/alunos" class="back_btn">Voltar</a>
+</div>
