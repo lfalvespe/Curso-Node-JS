@@ -1,0 +1,45 @@
+<h2>HOME</h2>
+
+<h3>Cadastro de alunos</h3>
+
+<form action="/alunos/insert" method="POST" class="form">
+
+    <fieldset>
+
+        <legend>Novo Aluno</legend>
+
+        <div class="form-control">
+            <label for="name">
+                nome:
+            </label>
+            <input type="text" name="name" id="" placeholder="Digite o nome do aluno" required>
+
+        </div>
+        <div class="form-control">
+            <label for="age">
+                idade:
+            </label>
+            <input type="number" name="age" id="" placeholder="Digite a idade do aluno" required>
+        </div>
+        <div class="form-control">
+            <label for="grade">
+                série:
+            </label>
+            <input type="number" name="grade" id="" placeholder="Digite a série do aluno" required>
+        </div>
+        <div class="form-control">
+            <label for="level">
+                nível:
+            </label>
+            <input type="text" name="level" id="" placeholder="Digite o nível do aluno" required>
+        </div>
+        <div class="form-control">
+            <label for="email">
+                email:
+            </label>
+            <input type="email" name="email" id="" placeholder="digite o email do aluno" required>
+
+        </div>
+        <input type="submit" class="btn_submit">
+    </fieldset>
+</form>

@@ -1,0 +1,43 @@
+<h2>Editar dados do aluno</h2>
+
+<form action="" method="POST" class="form">
+
+    <fieldset>
+
+        <legend>Novo Aluno</legend>
+
+        <div class="form-control">
+            <label for="name">
+                nome:
+            </label>
+            <input type="text" name="name" id="" placeholder="Digite o nome do aluno" value="{{aluno.name}}"" required>
+
+        </div>
+        <div class="form-control">
+            <label for="age">
+                idade:
+            </label>
+            <input type="number" name="age" id="" placeholder="Digite a idade do aluno" value="{{aluno.age}}"" required>
+        </div>
+        <div class="form-control">
+            <label for="grade">
+                série:
+            </label>
+            <input type="number" name="grade" id="" placeholder="Digite a série do aluno" value="{{aluno.grade}}"" required>
+        </div>
+        <div class="form-control">
+            <label for="level">
+                nível:
+            </label>
+            <input type="text" name="level" id="" placeholder="Digite o nível do aluno" value="{{aluno.level}}" required>
+        </div>
+        <div class="form-control">
+            <label for="email">
+                email:
+            </label>
+            <input type="email" name="email" id="" placeholder="digite o email do aluno" value="{{aluno.email}}"" required>
+
+        </div>
+        <input type="submit" class="btn_submit" value="Editar">
+    </fieldset>
+</form>
