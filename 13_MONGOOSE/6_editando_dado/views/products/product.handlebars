@@ -1,0 +1,24 @@
+<h1>Product Details</h1>
+
+<div class="product">
+  <img src="{{product.image}}" alt="{{product.name}}" />
+  <h5> {{product.name}} </h5>
+  <p> R$ {{product.price}} </p>
+  <p> {{product.description}} </p>
+
+  <div class="actions">
+    <form action="/products/edit/{{product._id}}" method="get">
+      <input type="submit" value="Editar" />
+    </form>
+    <form action="/products/delete" method="post">
+      <input type="hidden" name="id" value="{{product._id}}" />
+      <input type="submit" value="Excluir" />
+    </form>
+  </div>
+</div>
+
+{{#if message}}
+<div class="message">
+  {{message}}
+</div>
+{{/if}}

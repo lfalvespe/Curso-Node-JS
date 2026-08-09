@@ -1,0 +1,11 @@
+<h1 class="page-title">Products</h1>
+
+<div class="products">
+    {{#each products}}
+    <div class="product">
+        <img src="{{this.image}}" alt="{{this.name}}">
+        <h5> {{this.name}} </h5>
+        <p> R$ {{this.price}} </p>
+    </div>
+    {{/each}}
+</div>
